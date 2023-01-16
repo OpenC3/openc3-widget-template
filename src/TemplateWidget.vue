@@ -8,7 +8,7 @@
 
 <template>
   <div class="value-widget-container">
-    <template v-slot:activator="{ on, attrs }">
+    <template>
       <v-text-field
         solo
         dense
@@ -21,8 +21,6 @@
         :class="valueClass"
         :style="computedStyle"
         data-test="value"
-        v-bind="attrs"
-        v-on="on"
       />
     </template>
   </div>
